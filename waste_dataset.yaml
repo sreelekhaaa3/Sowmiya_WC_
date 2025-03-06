@@ -1,0 +1,6 @@
+path: M:/DHAMU/Sowmiya/dataset  # Base path
+train: images/train  # No need for full path here
+val: images/val
+
+nc: 6  # Number of classes
+names: ["cardboard", "glass", "metal", "plastic", "paper", "randomtrash"]
