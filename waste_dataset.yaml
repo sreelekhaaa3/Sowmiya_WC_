@@ -1,4 +1,4 @@
-path: M:/DHAMU/Sowmiya/dataset  # Base path
+path: D:\WC\Sowmiya_WC_\dataset  # Base path
 train: images/train  # No need for full path here
 val: images/val
 

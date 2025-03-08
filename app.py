@@ -6,7 +6,7 @@ from ultralytics import YOLO
 app = Flask(__name__)
 
 # Load YOLO model
-model = YOLO("runs/detect/train9/weights/best.pt")
+model = YOLO("runs\detect\train\weights\best.pt") # Nee to modify after the dataset training
 camera = cv2.VideoCapture(0)
 
 # Get class names from model

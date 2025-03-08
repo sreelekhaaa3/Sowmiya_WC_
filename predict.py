@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import cv2
 
 # Load trained YOLO model
-model = YOLO("runs/detect/train9/weights/best.pt")
+model = YOLO(".\runs\detect\train\weights\best.pt") 
 
 def classify_image(image_path):
     frame = cv2.imread(image_path)
@@ -19,7 +19,7 @@ def classify_image(image_path):
     return detected_classes
 
 if __name__ == "__main__":
-    image_path = r"M:\DHAMU\Sowmiya\dataset\images\val\cardboard1_jpg.rf.c238a492c67375958c9320cff493dde6.jpg"  # Use raw string (r"")
+    image_path = r".\dataset\images\train\cardboard2_jpg.rf.17b29db7d89d7de34132df97f9d9c6dd.jpg"  # Use raw string (r"")
     classes = classify_image(image_path)
     print(f"Detected: {', '.join(classes)}" if classes else "No waste detected.")
 
